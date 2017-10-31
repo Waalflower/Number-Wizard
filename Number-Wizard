@@ -3,8 +3,8 @@ using System.Collections;
 using UnityEngine.UI;
 
 public class NumberWizard : MonoBehaviour {
-	int max;
-	int min;
+	[SerializeField] int max;
+	[SerializeField] int min;
 	int guess;
 	
 	public int maxGuessesAllowed = 7;
@@ -18,8 +18,6 @@ public class NumberWizard : MonoBehaviour {
 	}
 	
 	void StartGame () {
-		max = 1000;
-		min = 1;
 		NextGuess();
 		
 	}
